@@ -40,7 +40,7 @@ function App() {
     yup.reach(schema, name)
     .validate(value)
     .then (() => setFormErrors({...formErrors, [name]: '' }))
-    .catch(err => setFormErrors({...formErrors, [name]: err.erros[0]}))
+    .catch(err => setFormErrors({...formErrors, [name]: err.errors[0]}))
   }
 
   const handleChange = (name, value) => {

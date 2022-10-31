@@ -29,6 +29,7 @@ const onSubmit = (e) => {
                     name="username"
                     value={username}
                     onChange={onChange}
+                    id="usernameInput"
                 />
             </label>
             <label>Email:
@@ -37,6 +38,7 @@ const onSubmit = (e) => {
                     name="email"
                     value={email}
                     onChange={onChange}
+                    id="emailInput"
                 />
             </label>
             <label>Password:
@@ -45,6 +47,7 @@ const onSubmit = (e) => {
                     name="password"
                     value={password}
                     onChange={onChange}
+                    id="passwordInput"
                 />
             </label>
             <label>Terms of Service:
@@ -53,9 +56,10 @@ const onSubmit = (e) => {
                     name="tos"
                     checked={tos}
                     onChange={onChange}
+                    id="tosInput"
                 />
             </label>
-            <input type="submit" value="Create a Friend!" />
+            <input type="submit" value="Create a Friend!" className="submitBtn" />
 
         </form>
        </div>
